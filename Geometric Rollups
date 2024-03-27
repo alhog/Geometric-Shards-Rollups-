@@ -1,0 +1,6 @@
+function rollup_shards(shards::Vector{<:Union{Triangle, Square}})
+    # Your rollup logic here
+    # For illustration, let's sum up values
+    total_value = sum(d -> d.value, shards)
+    return total_value
+end
