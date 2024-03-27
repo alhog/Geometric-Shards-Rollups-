@@ -1,0 +1,7 @@
+function shard_geometric_data(data::Vector{<:Union{Triangle, Square}})
+    # Your sharding logic here
+    # For illustration, let's split into two shards based on value
+    shard1 = filter(d -> d.value < 50.0, data)
+    shard2 = filter(d -> d.value >= 50.0, data)
+    return shard1, shard2
+end
