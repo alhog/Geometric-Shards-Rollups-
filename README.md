@@ -103,7 +103,7 @@ Here are some advanced features we can explore:
 
      *Dynamic sharding allows your system to adjust shard boundaries based on data growth or other dynamic factors.*
 
-     Here's how we can approach it:
+Here's how we can approach it:
 
 1. **Define Shards**:
    - Decide how many shards you want initially.
@@ -165,7 +165,7 @@ Here are some advanced features we can explore:
 
      *Geometric contracts define rules and behaviors associated with different geometric shapes within your Geobloks system.*
 
-      Here's how we can structure the module:
+Here's how we can structure the module:
 
 1. **Define Geometric Contracts**:
    - Create custom types (structs) for each geometric contract.
@@ -236,6 +236,23 @@ Here are some advanced features we can explore:
 5. **Visualization and Validation**:
    - Visualize the consensus process to understand convergence.
    - Validate the resulting positions against geometric constraints.
+
+     *Geometric consensus involves reaching agreement or alignment among geometric entities based on specific criteria.*
+
+Here's how we can structure the module:
+
+1. **Define Geometric Consensus Types**:
+   - Create custom types (structs) for different geometric consensus scenarios.
+   - Specify fields for properties relevant to consensus.
+
+2. **Implement Consensus Logic**:
+   - Define functions or methods related to achieving consensus.
+   - Consider iterative methods, voting schemes, or graph-based algorithms.
+
+4. **Usage**:
+   - In your main program, import the `GeometricConsensus` module.
+   - Create instances of different consensus types.
+   - Invoke consensus-related functions as needed.
 
 ## **Geometric Visualization**:
    - Create stunning visualizations of shard interactions.
