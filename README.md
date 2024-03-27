@@ -99,6 +99,27 @@ Here are some advanced features we can explore:
    - **Even Distribution**: Keep shards balanced to handle similar I/O volume.
    - **Consistent Hashing**: Use consistent hashing algorithms for shard assignment.
 
+     *Dynamic sharding allows your system to adjust shard boundaries based on data growth or other dynamic factors.*
+     Here's how we can approach it:
+
+1. **Define Shards**:
+   - Decide how many shards you want initially.
+   - Each shard will handle a subset of the data.
+
+2. **Data Distribution**:
+   - Distribute your data (geometric entities) across the shards.
+   - Consider using consistent hashing or other distribution techniques.
+
+3. **Dynamic Adjustment**:
+   - Monitor data growth or changes.
+   - When needed, create new shards or merge existing ones.
+   - Adjust shard boundaries to maintain balance.
+
+4. **Considerations**:
+   - Shard management overhead: Ensure efficient creation and merging of shards.
+   - Load balancing: Keep shards evenly distributed.
+   - Consistency: Handle shard boundary adjustments carefully.
+
 ## **Geometric Contracts**:
    - Extend beyond simple shapes.
    - Define custom geometric contracts with associated behaviors.
