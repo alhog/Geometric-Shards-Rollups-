@@ -1,0 +1,21 @@
+struct Triangle
+    sides::Int
+    value::Float64
+    function Triangle(sides::Int, value::Float64)
+        if sides != 3
+            throw(ArgumentError("Triangles must have 3 sides"))
+        end
+        new(sides, value)
+    end
+end
+
+struct Square
+    sides::Int
+    value::Float64
+    function Square(sides::Int, value::Float64)
+        if sides != 4
+            throw(ArgumentError("Squares must have 4 sides"))
+        end
+        new(sides, value)
+    end
+end
