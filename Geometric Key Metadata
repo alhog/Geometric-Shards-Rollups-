@@ -1,0 +1,45 @@
+module GeometricSecurity
+
+export generate_encryption_key, rotate_encryption_key, recover_key, store_key_securely, audit_key_usage, get_key_metadata
+
+# Generate a new encryption key
+function generate_encryption_key()
+    # Your key generation logic here
+    # ...
+end
+
+# Rotate encryption key (replace with actual rotation logic)
+function rotate_encryption_key(current_key::Key)
+    new_key = generate_encryption_key()
+    # Store new_key securely
+    return new_key
+end
+
+# Recover a lost key (e.g., during node failure)
+function recover_key(backup_shares::Vector{KeyShare})
+    # Reconstruct the key from shares
+    # ...
+end
+
+# Store a key securely (e.g., in an HSM or secure cloud storage)
+function store_key_securely(key::Key)
+    # Your secure storage logic here
+    # ...
+end
+
+# Audit key usage and access events
+function audit_key_usage(key::Key)
+    # Log key events (e.g., creation, rotation, recovery)
+    # Monitor for anomalies or unauthorized access
+    # ...
+end
+
+# Get metadata for a specific key
+function get_key_metadata(key::Key)
+    # Retrieve metadata (e.g., creation timestamp, owner, purpose)
+    # ...
+end
+
+# Additional functions for key metadata management
+
+end
