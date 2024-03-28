@@ -1,6 +1,20 @@
-function rollup_shards(shards::Vector{<:Union{Triangle, Square}})
-    # Your rollup logic here
-    # For illustration, let's sum up values
-    total_value = sum(d -> d.value, shards)
-    return total_value
+# Define the Rollups module
+module Rollups
+
+using ..Shapes
+using ..Data
+using ..Contracts
+using ..DynamicSharding
+
+abstract type Block end
+
+struct ShapeBlock <: Block
+    shards::Array{DynamicSharding.ShapeShard,1}
 end
+
+function roll_up(shards::Array{DynamicSharding.ShapeShard,1})
+    # Implement rollup logic here
+    return ShapeBlock(shards)
+end
+
+end # end of Rollups module
