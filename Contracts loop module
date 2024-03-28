@@ -1,0 +1,18 @@
+# Define the Contracts module
+module Contracts
+
+using ..Shapes
+using ..Data
+
+abstract type Contract end
+
+struct ShapeContract <: Contract
+    data_structure::Data.ShapeData
+end
+
+function create(data_structure::Data.ShapeData)
+    # Implement contract creation logic here
+    return ShapeContract(data_structure)
+end
+
+end # end of Contracts module
