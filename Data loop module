@@ -1,0 +1,18 @@
+# Define the Data module
+module Data
+
+using ..Shapes
+
+abstract type DataStructure end
+
+struct ShapeData <: DataStructure
+    shape::Shapes.Shape
+    data::Array{Float64,1}
+end
+
+function process(shape::Shapes.Shape, raw_data::Array{Float64,1})
+    # Implement data processing logic here
+    return ShapeData(shape, processed_data)
+end
+
+end # end of Data module
