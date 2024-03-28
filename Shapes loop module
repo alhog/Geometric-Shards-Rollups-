@@ -1,0 +1,31 @@
+# Define the Shapes module
+module Shapes
+
+abstract type Shape
+    sides::Int
+    value::Float64
+end
+
+function rotate(shape::Shape, angle::Float64)
+    # Implement rotation logic here
+end
+
+function draw(shape::Shape)
+    # Implement drawing logic here
+end
+
+struct Triangle <: Shape
+    function Triangle(value::Float64)
+        new(3, value)
+    end
+end
+
+struct Square <: Shape
+    function Square(value::Float64)
+        new(4, value)
+    end
+end
+
+# Add more shapes here as needed
+
+end # end of Shapes module
