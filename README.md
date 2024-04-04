@@ -3,7 +3,7 @@
 
 1. **Geometric Data Packets**:
    - Each geometric shape represents a data packet with a specific numerical value and function.
-   - We have triangles (3-sided), squares (4-sided), and potentially more complex shapes like pentagons (5-sided) and beyond.
+   - As more edges are added to our data structures, we can begin to visualize more complex relationships within the data itself.
    - These shapes symbolize different types of transactions or data points.
 
 2. **Sharding Process**:
